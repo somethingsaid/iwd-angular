@@ -1,5 +1,22 @@
 # IwdAngular
 
+## Notes when Creating app from scatch:
+- commands to run after creation
+  - `ng add @angular/material`
+  - `ng add @angular/pwa`
+
+## Setting up ngRx
+- https://medium.com/angular-in-depth/how-to-start-flying-with-angular-and-ngrx-b18e84d444aa
+
+### Generate Store
+`ng generate store AppState --root --module app.module.ts`
+
+### Generate Actions
+`ng generate action actions/news`
+
+### Generate Effects
+`ng generate effect effects/news --root --module app.module.ts`
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
 ## Development server

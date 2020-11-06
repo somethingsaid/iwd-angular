@@ -1,0 +1,18 @@
+<div>
+  <h1>NEWS AND UPDATES</h1>
+  <div *ngIf="newsItems$ | async as newsItems; else elseBlock">
+    <mat-card *ngFor="let newsItem of newsItems" class="news-item">
+      <mat-card-header>
+        <mat-card-title>
+          {{ newsItem.text }}
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-actions>
+        <a mat-button [href]="newsItem.text">Read More</a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  <ng-template #elseBlock>
+    <mat-spinner></mat-spinner>
+  </ng-template>
+</div>
