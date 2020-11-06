@@ -50,6 +50,7 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
+              "baseHref": "https://annsonn.github.io/iwd-angular/",
               "budgets": [
                 {
                   "type": "initial",

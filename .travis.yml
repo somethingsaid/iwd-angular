@@ -5,7 +5,7 @@ cache: npm
 install:
   - npm install
 script:
-  - npm run-script build
+  - npm run build-prod
 deploy:
   provider: pages
   skip_cleanup: true
